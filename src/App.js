@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import Login from './components/pages/Login'
+import Register from './components/pages/Register'
+import Error from './components/pages/Error'
+import Otp from './components/pages/Otp'
+import { Routes, Route } from 'react-router-dom'
+import Dashboard from './components/pages/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    <Routes>
+      <Route path='/' element={<Login/>}/>
+      <Route path='/register' element={<Register/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/user/otp' element={<Otp/>}/>
+      <Route path='*' element={<Error/>}/>
+    </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,30 @@
+.f1{
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+h2{
+    text-align: center;
+}
+h2 span{
+    color: brown;
+}
+.f1 p{
+    text-align: center;
+}
+
+span {
+    color: yellow;
+}
+
+.showpass{
+    position: absolute;
+    right: 35.3% ;
+    bottom: 36.8%;
+    border-radius: 3px;
+    background-color: lightgray;
+    padding: 2.8px;
+    cursor: pointer;
+}
