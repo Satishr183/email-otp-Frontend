@@ -13,9 +13,7 @@ function Dashboard() {
     }
   }
 
-  useEffect(() => {
-    userValid();
-  }, [])
+ useEffect(userValid)
   return (
     <div>Dashboard</div>
   )
